@@ -32,14 +32,15 @@ body {
 				display: block;
 				color: black;
 				text-decoration: none;
-				padding: 20px 10px;
+				padding: 5px 10px;
 			}
-			.nav li a:hover {
-				padding-top: 5px;
-				padding-bottom: 5px;
-				border-top: 3px solid #2aacc8;
-				color: #2aacc8;
+			.nav > li:hover{
 				background-color: white;
+				border-top: 3px solid #2aacc8;
+			}
+			
+			.nav li a:hover {				
+				color: #2aacc8;				
 			}
 			.nav li a:hover:after {
 				color: black;
@@ -49,7 +50,8 @@ body {
 			display: none;
 		    position: absolute;
 		    width: 200px;
-		    top: 30px;
+		    top: 28px;
+		    padding: 0;
 		    left: inherit;
 		    font-size: 13px;
 		    font-weight: 700;
@@ -105,7 +107,6 @@ body {
 					ul.subnav > li > a:hover {
 					    border-top: none;
 					    color:  #2aacc8;
-					    padding: 10px;
 					}
 
 						ul.nav > li:hover > ul.subnav {
@@ -140,17 +141,18 @@ span {
 	.foil {
 		background-color: #81e4ed;
 		padding-top: 20px;
-		padding-bottom: 20px;
+		padding-bottom: 14px;
 		height: 100%;
 	}
 			.foil img  {
 				background-color: #dd5835;
 				display: block;
 				margin: 0 auto;
-				max-width: 1000px;
+				width: 100%;
 			}
 			.foil ul {
 				text-align: center;
+				margin: 0;
 			}
 
 			.foil li {
@@ -184,7 +186,7 @@ span {
 			.next h6 {
 				font-size: 15px;
 				font-weight: 700;
-				line-height: 20px;
+				line-height: 40px;
 				text-transform: uppercase;
 			}
 
@@ -233,6 +235,7 @@ span {
 
 		.next a {
 			color: #2aacc8;
+			text-decoration: none;
 		}
 
 		.next a:before {
@@ -257,7 +260,10 @@ span {
 	}
 
 		.latest ul {
-			float: right;
+		    position: absolute;
+		    right: 0;
+		    top: 15px;
+		    margin: 0;
 		}
 
 			.latest li {
@@ -269,6 +275,7 @@ span {
 			font-weight: 700;
 			margin: 5px; 
 			text-align: center;
+			font-size: 62%;
 			}
 			.latest h6:before {
 				content: "";
@@ -286,7 +293,8 @@ span {
 			}
 
 		.pic {
-			text-align: center;
+			display: flex;
+   			justify-content: space-between;
 		}
 
 		.gallery {
@@ -304,6 +312,8 @@ span {
 		position: absolute;
 		bottom: 0;
 		left: 0;
+	    text-align: center;
+    	line-height: 60px;
 		display: none;
 	}
 
@@ -335,7 +345,7 @@ span {
 			}
 
 hr {
-	color: lightgray;
+	color:  #dfe1e5;
 	max-width: 1000px;
 	margin-bottom: 10px;
 	}
@@ -407,7 +417,7 @@ hr {
 			line-height: 26px;
 			display: inline-block;
 			padding: 30px;
-
+			margin: 0;
 		}
 
 		.download b {
@@ -420,7 +430,8 @@ hr {
 			padding: 0px;
 			width: 240px;
 			height: 60px;
-			vertical-align: middle;
+		    vertical-align: top;
+    		margin-top: 30px;
 			background-color: #2aacc8;
 			background-image: linear-gradient(to top, #2aacc8 0%, #2aacc8 0%, #60cede 15%, #72dae6 50%, #81e4ed 100%);
 			border: 1px solid #2aacc8;
@@ -448,6 +459,10 @@ hr {
 footer {
 	text-align: justify;
 }
+	footer ul{
+		list-style-type: none;
+		padding: 0;
+	}
 
 	footer > div {
 		display: inline-block;
@@ -516,6 +531,7 @@ footer {
 		line-height: 20px;
 		text-align: left;
 		float: left;
+		margin: 0;
 	}
 
 	.finish a {
